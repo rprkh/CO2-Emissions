@@ -1,0 +1,33 @@
+* {
+	box-sizing: border-box;
+	text-align: center;
+}
+
+body {
+	background: black;
+	color: white;
+	font-size: 40px;
+}
+
+.format {
+	position: center;
+}
+
+input {
+	width: 40%;
+	padding: 5px;
+	border-radius: 5px;
+	background: #cdeefd;
+	margin-left: 300px;
+	margin-right: 300px;
+}
+
+button {
+	width: 50%;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 5px;
+	background: #81d4fa;
+	margin-left: 300px;
+	margin-right: 300px
+}
