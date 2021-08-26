@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split as tts
 from sklearn.linear_model import LinearRegression as LR
 from sklearn.tree import DecisionTreeRegressor
+import pickle
 
 df = pd.read_csv('C:/Users/rahil/Rahil/KJ Somaiya/Sem-III/ML-DS Projects/Fuel Cosumption Deployed Using Flask/FuelConsumptionCo2.csv')
 df = df.dropna()
@@ -19,3 +20,6 @@ pred_y = linreg.predict(test_x)
 accuracy = linreg.score(test_x, test_y)
 print(accuracy * 100, "%")
 print(np.abs(test_y - pred_y).mean())
+pickle.dump(linreg, open('model_linear_regression.pkl', 'wb'))
+model = pickle.load(open('model_linear_regression.pkl', 'rb'))
+print(model.predict([[2, 4, 9.9, 6.7, 33]]))
