@@ -16,7 +16,7 @@ def predict():
     prediction = model.predict(final_features)
     output = round(prediction[0], 2)
 
-    return render_template('index.html', prediction_text = 'CO\u2082 emissions are {} g/kg'.format(output))
+    return render_template('index.html', prediction_text = 'CO\u2082 emissions are {} g/km'.format(output))
 
 @app.route('/results', methods = ['POST'])
 def result():
