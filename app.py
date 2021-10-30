@@ -14,10 +14,9 @@ def predict():
     int_features = [x for x in request.form.values()]
     final_features = [np.array(int_features)]
     prediction = model.predict(final_features)
-
     output = round(prediction[0], 2)
 
-    return render_template('index.html', prediction_text = 'CO2 emissions are {}'.format(output))
+    return render_template('index.html', prediction_text = 'CO\u2082 emissions are {} g/kg'.format(output))
 
 @app.route('/results', methods = ['POST'])
 def result():
