@@ -9,12 +9,12 @@
 	<div class = "format">
 		<h1>Prediction of CO<sub>2</sub> Emissions</h1>
 		<form action = "{{url_for('predict')}}" method = "post">
-			<input type = "text" name = "enginesize" placeholder = "enginesize" required = "required" />
-			<input type = "text" name = "cylinders" placeholder = "cylinders" required = "required" />
-			<input type = "text" name = "fuel_consumption_city" placeholder = "fuel_consumption_city" required = "required" />
-			<input type = "text" name = "fuel_consumption_highway" placeholder = "fuel_consumption_highway" required = "required" />
-			<input type = "text" name = "fuel_consumption_combination_mpg" placeholder = "fuel_consumption_combination_mpg" required = "required" />
-			<button type="submit" class="btn btn-primary btn-block btn-large">Predict fuel consumption</button>
+			<input type = "text" name = "enginesize" placeholder = "Engine capacity in Litres" required = "required">
+			<input type = "text" name = "cylinders" placeholder = "Number of cyclinders" required = "required">
+			<input type = "text" name = "fuel_consumption_city" placeholder = "Fuel consumption in the city (L/100 km)" required = "required">
+			<input type = "text" name = "fuel_consumption_highway" placeholder = "Fuel consumption on highways (L/100km)" required = "required">
+			<input type = "text" name = "fuel_consumption_combination_mpg" placeholder = "Combined fuel consumption in cities and highways (L/100km)" required = "required">
+			<button type="submit" class="btn btn-primary btn-block btn-large">Predict CO<sub>2</sub> Emissions</button>
 		</form>
 		<br>
 		{{prediction_text}}
