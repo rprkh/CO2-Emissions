@@ -5,7 +5,7 @@
 
 body {
 	background: #000000;
-	color: white;
+ 	color: white; 		
 	font-size: 40px;
 }
 
@@ -23,57 +23,60 @@ input {
 
 input:hover {
 	border: 3px solid #187bcd;
-	/*border-color: #187bcd;*/
 	color: black;
 }
 
 button {
 	padding: 5px;
 	border-radius: 5px;
-	/*background: #81d4fa;*/
 	background-color: #cdeefd; 
 	color: gray;
 }
 
 button:hover {
-/*	background-color: #187bcd;*/
 	background-color: #2a9df4;
 	transition: 0.5s; 
 	color: black;
 }
 
-@media (min-width: 1281px) {
+/*media queries*/
+
+@media (min-width: 1201px) {
 	input, button {
 		width: 40%;
 		margin-left: 300px;
 		margin-right: 300px;
 	}
 }
-@media (min-width: 1025px) and (max-width: 1280px) {
+
+@media (min-width: 1025px) and (max-width: 1200px) {
 	input, button {
 		width: 40%;
 		margin-left: 300px;
 		margin-right: 300px;
 	}
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+
+@media (min-width: 769px) and (max-width: 1024px) {
 	input, button {
-		width: 40%;
-		margin-left: 210px;
-		margin-right: 210px;
+		width: 60%;
+		margin-left: 150px;
+		margin-right: 150px;
 	}	
 }
-@media (min-width: 481px) and (max-width: 767px) {
+
+@media (min-width: 481px) and (max-width: 768px) {
 	input, button {
-		width: 50%;
-		margin-left: 100px;
-		margin-right: 100px;
+		width: 82%;
+		margin-left: 48px;
+		margin-right: 48px;
 	}
 }
+
 @media (min-width: 320px) and (max-width: 480px) {
 	input, button {
-		width: 50%;
-		margin-left: 70px;
-		margin-right: 70px;
+		width: 82%;
+		margin-left: 40px;
+		margin-right: 40px;
 	}
 }
